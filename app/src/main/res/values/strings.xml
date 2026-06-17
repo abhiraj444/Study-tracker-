@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StudyFlow</string>
+
+    <string-array name="start_study_queries">
+        <item>start studying $subject$</item>
+        <item>start studying $subject$ $chapter$</item>
+        <item>I am going to study $subject$</item>
+        <item>I am going to study $subject$ $chapter$ $mode$</item>
+        <item>begin study session for $subject$</item>
+        <item>studying $subject$ $chapter$ now</item>
+        <item>open study session $subject$</item>
+        <item>I want to study $subject$</item>
+    </string-array>
+
+    <string-array name="stop_study_queries">
+        <item>I am done studying</item>
+        <item>stop study session</item>
+        <item>finished studying</item>
+        <item>end study session</item>
+        <item>I have completed my study</item>
+        <item>study done</item>
+        <item>stop the timer</item>
+    </string-array>
+
+    <string-array name="take_break_queries">
+        <item>take a break for $duration$</item>
+        <item>I am taking a break</item>
+        <item>pause study session</item>
+        <item>break time</item>
+    </string-array>
+</resources>
