@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <!-- START STUDY -->
+  <capability android:name="com.studyflow.START_STUDY"
+    app:queryPatterns="@array/start_study_queries">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetClass="com.studyflow.ui.SessionActivity"
+      android:targetPackage="com.studyflow">
+      <parameter android:name="subject" android:key="subject" />
+      <parameter android:name="chapter" android:key="chapter" />
+      <parameter android:name="mode" android:key="mode" />
+    </intent>
+  </capability>
+
+  <!-- STOP STUDY -->
+  <capability android:name="com.studyflow.STOP_STUDY"
+    app:queryPatterns="@array/stop_study_queries">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetClass="com.studyflow.ui.SessionActivity"
+      android:targetPackage="com.studyflow">
+      <parameter android:name="action" android:key="action"
+        android:value="STOP" />
+    </intent>
+  </capability>
+
+  <!-- TAKE BREAK -->
+  <capability android:name="com.studyflow.TAKE_BREAK"
+    app:queryPatterns="@array/take_break_queries">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetClass="com.studyflow.ui.SessionActivity"
+      android:targetPackage="com.studyflow">
+      <parameter android:name="duration" android:key="breakDuration" />
+    </intent>
+  </capability>
+
+</shortcuts>
